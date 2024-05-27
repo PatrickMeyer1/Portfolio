@@ -4,7 +4,7 @@ body {
     margin: 0 auto;
     max-width: 800px;
     padding: 20px;
-    background-color: lightblue;
+    background-color: rgb(213, 243, 252);
 }
 
 .resume-header {
@@ -22,38 +22,60 @@ body {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.623);
 }
 
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 48%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px black solid ;
+}
+
 .group-members {
     text-align: center;
     font-size: large;
 }
 
-.header-center{
+.header-center {
     text-align: center;
 }
 
 h1 {
     margin-bottom: 5px;
     text-align: center;
+    font-size: 40px;
 }
 
 h2 {
     margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px; 
 }
 
 h3 {
     margin-bottom: 5px;
+    font-size: 24px; 
 }
 
 h4 {
     margin-bottom: 2px;
+    font-size: 20px;
 }
 
-h5{
+h5 {
+    margin-top: 10px;
     margin-bottom: 0px;
+    font-size: 18px; 
 }
 
 p {
     margin-bottom: 10px;
+    font-size: 16px; 
 }
 
 a {
@@ -67,7 +89,6 @@ a:hover {
 .summary,
 .education,
 .experience,
-.projects,
 .technical-skills {
     margin-bottom: 30px;
 }
@@ -75,8 +96,4 @@ a:hover {
 ul {
     list-style-type: disc;
     margin-left: 20px;
-}
-
-section > article {
-    margin-bottom: 20px;
 }

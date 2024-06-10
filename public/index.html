@@ -137,53 +137,43 @@
         </div>
         <div class="container">
             <h3 class="header-center">Yatzy</h3>
-            <p>Mealer is a simple Android application that allows the purchase of meals by clients from cooks. Mealer has an admin who manages a list of complaints filed by clients and they can administer suspensions to cooks they deem problematic. The application was programmed entirely in Java and user information was stored into a Firebase Database. </p>               
+            <p>Yatzy is a classic dice game where players roll five dice to achieve specific combinations and earn points. The game consists of multiple rounds, and players aim to score the highest total points by the end of the game. </p>               
                 <ul>
-                    <li><strong>Programming Language:</strong> Java</li>
-                    <li><strong>Integrated Development Environment:</strong> Android Studio</li>
-                    <li><strong>Database:</strong> Firebase Database</li>
+                    <li><strong>Programming Language:</strong> JavaScript, HTML, CSS</li>
+                    <li><strong>Integrated Development Environment:</strong> Visual Studio Code</li>
                 </ul>
                 <h4>Component Diagram</h4>
-                    <h5>Client Application Components:</h5>
+                    <h5>Application Components:</h5>
                         <ul>
-                            <li>Registration and Authentication</li>
-                            <li>User Dashboards</li>
-                            <li>Meal Management</li>
-                            <li>Complaint Management</li>
-                            <li>Search and Browse Meals</li>
+                            <li>Scorecard</li>
+                            <li>5 Dice</li>
+                            <li>Game Engine</li>
+                            <li>Scoring calculation</li>
+                            <li>Random Dice Roll</li>
                         </ul>
-                    <h5>Backend Services:</h5>
-                        <ul>
-                            <li>User Data Management</li>
-                            <li>Meal Data Management</li>
-                            <li>Complaint Data Management</li>
-                        </ul>
+
                 
                 <h4>Features and Functionalities</h4>
-                    <h5>Client Registration:</h5>
+                    <h5>Roll Dice:</h5>
                         <ul>
-                            <li>Fields: Name, Email, Password, Address, Payment Details</li>
-                            <li>Validation: Email format, password strength</li>
-                            <li>Database: Store client information in Firebase</li>
+                            <li>Allows players to roll the dice to generate random values.</li>
+                            <li>5 dice in total</li>
                         </ul>
-                    <h5>Cook Registration:</h5>
+                    <h5>Score Calculation: </h5>
                         <ul>
-                            <li>Fields: Name, Email, Password, Address, Culinary Experience, Specialty</li>
-                            <li>Validation: Email format, password strength</li>
-                            <li>Database: Store cook information in Firebase</li>
+                            <li>Automatically calculates scores based on the combination of dice values selected by the player.</li>
+                            <li>Different combinations including small straight, full house, 4 of a kind, etc.</li>
                         </ul>                    
-                    <h5>Authentication:</h5>
+                    <h5>Scorecard Interaction:</h5>
                         <ul>
-                            <li>Log In: Email and Password authentication using Firebase Authentication</li>
-                            <li>Log Out: User session management</li>
+                            <li>Enables players to select and mark scoring categories on the scorecard.</li>
+                            <li>Players can see their selected scores throughout the game</li>
                         </ul>
                     
                     <h5>Other Features:</h5>
                     <ul>
-                        <li>User Dashboards</li>
-                        <li>Administration privileges</li>
-                        <li>Meal Management (add meals, update meals, view meals, search meals, purchase meals)</li>
-                        <li>File Complaint</li>
+                        <li>Turn Management</li>
+                        <li>End-of-Game Evaluation</li>
                     </ul>
 
                 <h4>Images of application</h4>

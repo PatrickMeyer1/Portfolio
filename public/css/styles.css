@@ -22,6 +22,21 @@ body {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.623);
 }
 
+.image-container-yatzy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-container-yatzy img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 2px black solid ;
+}
+
 .image-container {
     display: flex;
     justify-content: space-between;

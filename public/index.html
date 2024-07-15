@@ -182,6 +182,33 @@
                     <img src="images/finalscore.png" alt="Yatzy Final Score">
                 </div>
         </div>
+        <div class="container">
+            <h2>Yatzy with PHP API</h2>
+            <p>In this section, we have enhanced the Yatzy game by integrating a PHP backend with AJAX to dynamically handle game actions. We created a PHP API that processes dice rolls and score calculations, which are then fetched and displayed using AJAX calls. This allows for a more interactive and dynamic gaming experience.</p>
+            
+            <h4>Features of PHP API Integration</h4>
+            <ul>
+                <li><strong>Dice Roll Handling:</strong> The PHP API manages the dice roll functionality, generating random values for the dice and returning them to the client-side application.</li>
+                <li><strong>Score Calculation:</strong> The PHP API calculates scores based on the dice values rolled, ensuring accurate and consistent scoring according to Yatzy rules.</li>
+                <li><strong>AJAX Communication:</strong> AJAX is used to send requests to the PHP API and update the game state dynamically without needing to reload the page, providing a seamless user experience.</li>
+                <li><strong>Session Management:</strong> The PHP backend maintains game state and player information using sessions, ensuring that the game progress is tracked and managed effectively.</li>
+            </ul>
+            
+            <h4>Benefits of Using PHP API and AJAX</h4>
+            <ul>
+                <li><strong>Improved Performance:</strong> By offloading processing to the server-side PHP scripts, the client-side application remains responsive and efficient.</li>
+                <li><strong>Enhanced User Experience:</strong> AJAX allows for real-time updates and interactions, making the game more engaging and user-friendly.</li>
+                <li><strong>Scalability:</strong> The PHP API can be easily extended to include additional features and functionalities, allowing for future enhancements to the game.</li>
+            </ul>
+            
+            <h4>Implementation Details</h4>
+            <p>The integration involved setting up a PHP server with endpoints for dice rolls and score calculations. The client-side application uses JavaScript and AJAX to communicate with these endpoints, sending and receiving data as required. This setup ensures that the game logic is processed on the server-side, while the client-side handles user interactions and display updates.</p>
+            
+            <h4>Image of the Enhanced Yatzy Application</h4>
+            <div class="image-container-yatzy">
+                <img src="images/view_leaderboard.png" alt="Yatzy API Integration">
+            </div>
+        </div>
     </div>
 </body>
 </html>

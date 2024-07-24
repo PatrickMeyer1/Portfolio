@@ -209,6 +209,62 @@
                 <img src="images/view_leaderboard.png" alt="Yatzy API Integration">
             </div>
         </div>
+
+        <div class="container">
+            <h2>Hospital Triage System</h2>
+            <p>In this section, we have developed a Hospital Triage System that enhances patient management and wait time tracking in the emergency room. The system uses a combination of PHP backend and AJAX for a seamless experience for both administrators and patients.</p>
+            
+            <h4>Features of the Hospital Triage System</h4>
+            <ul>
+                <li><strong>Administrator Functions:</strong> Administrators can sign in to access the full list of patients, add new patients, and update patient statuses. The system allows for easy management of patient queues based on severity and wait times.</li>
+                <li><strong>Patient Wait Time Tracking:</strong> Patients can sign in using their name and a unique 3-letter code to view their current wait time in the queue. This feature keeps patients informed about their estimated wait times.</li>
+                <li><strong>AJAX Communication:</strong> AJAX is utilized to send and receive data between the client-side application and the PHP backend, allowing real-time updates of patient information and wait times without reloading the page.</li>
+                <li><strong>Session Management:</strong> The PHP backend handles user sessions to ensure secure access for administrators and accurate tracking of patient information.</li>
+            </ul>
+            
+            <h4>Benefits of Using PHP API and AJAX</h4>
+            <ul>
+                <li><strong>Efficient Management:</strong> By using a PHP backend, administrators can efficiently manage patient data and update statuses in real-time, improving overall operational efficiency.</li>
+                <li><strong>Enhanced Patient Experience:</strong> Patients receive timely updates on their wait times through AJAX-based real-time communication, enhancing their overall experience and reducing uncertainty.</li>
+                <li><strong>Scalability:</strong> The system is designed to be scalable, with the ability to incorporate additional features and handle increasing amounts of patient data as needed.</li>
+            </ul>
+            
+            <h4>Implementation Details</h4>
+            <p>The integration involved setting up a PHP server with endpoints for patient management and wait time tracking. The client-side application uses JavaScript and AJAX to interact with these endpoints, providing real-time updates and managing patient data dynamically.</p>
+            
+            <h4>Database Schema</h4>
+            <p>The system utilizes a MySQL database to store and manage data. The database schema includes the following tables:</p>
+            
+            <h5>Patients Table</h5>
+            <pre>
+        CREATE TABLE patients (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            name VARCHAR(255) NOT NULL,
+            code CHAR(3) NOT NULL,
+            severity INT NOT NULL CHECK (severity BETWEEN 1 AND 5),
+            status ENUM('waiting', 'treated') DEFAULT 'waiting',
+            timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+            </pre>
+            <p>This table stores information about patients, including their name, unique 3-letter code, severity of condition, status (waiting or treated), and the timestamp of when the record was created.</p>
+        
+            <h5>Admins Table</h5>
+            <pre>
+        CREATE TABLE admins (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            username VARCHAR(255) NOT NULL UNIQUE,
+            password VARCHAR(255) NOT NULL
+        );
+            </pre>
+            <p>This table contains administrator credentials with a unique username and password for secure access to the administrative functions of the system.</p>
+            
+            <h4>Image of the Hospital Triage System</h4>
+            <div class="image-container-yatzy">
+                <img src="images/admin.png" alt="Hospital Triage System">
+            </div>
+        </div>
+        
+        
     </div>
 </body>
 </html>
